@@ -1,3 +1,5 @@
+import React from "react";
+
 function App() {
 
 	const features : string[] = ['Vite', 'React', 'TypeScript', 'Zero'];
@@ -5,7 +7,7 @@ function App() {
 	return (
 		<ul>
 			{
-				features.map(f => <li>{f}</li>)
+				features.map((f, idx) => <li key={idx}>{f}</li>)
 			}
 		</ul>
 	);
